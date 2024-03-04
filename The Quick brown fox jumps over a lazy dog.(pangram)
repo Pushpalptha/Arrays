@@ -1,0 +1,18 @@
+A pangram is a sentence that contains every letter of the alphabet at least once.
+public class Main {
+    public static boolean pangram(String input) {
+        input = "The quick brown fox jumps over a lazy dog";
+
+        if (input.length() < 26) {
+            return false;
+        } else {
+            for (char i = 'a'; i <= 'z'; i++) {
+                if (input.indexOf(i) < 0) {
+                    return false;  // Return false only if a letter is missing
+                }
+            }
+            return true;
+        }
+    }
+}
+output:-True
