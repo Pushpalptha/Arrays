@@ -1,0 +1,15 @@
+#By using Hash table 
+# Time comlexity:o(1)
+Public class Main{
+  Public static void main(String[] args){
+    Map<Integer.Integer>map=new HashMap<>();
+      for(int i=0;i<a.length;i++){
+        int comp = target-a[i];
+            if(comp.containskey((comp)){
+      return new int[]{a.get (comp),i};
+			}
+		} map.put(a,[i],i);
+	}
+}
+input:-  2  11  7  15
+output:- (target value) 9=(2+7)
