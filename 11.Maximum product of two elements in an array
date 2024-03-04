@@ -1,0 +1,19 @@
+Public class Main{
+	Public static void main(int[]n){
+		Int max=0;
+		Int second=0;
+			for(int num:n){
+				if(num<max){
+					second=max;
+					max=num;
+					continue;
+				}
+				If(num>second){
+					Secondmax=num;
+					}
+					Return(max-1)*(second-1);
+				}
+			}
+Input:-[3,4,5,2]
+Output:-12
+
