@@ -1,0 +1,20 @@
+public class Main{
+    public static void reversearray(char[] array){
+        int left=0;
+        int right=array.length-1;
+        while(left<right){
+            char temp=array[left];
+            array[left]=array[right];
+            array[right]=temp;
+            left++;
+            right--;
+        }
+    }
+    public static void main(String[] args){
+        char[] inputarray={'h','e','l','l','o'};
+        System.out.println("Original array: " +new String(inputarray));
+        reversearray(inputarray);
+         System.out.println("reverse array: " +new String(inputarray));
+    }
+}
+output:-['o','l','l','e','h']
