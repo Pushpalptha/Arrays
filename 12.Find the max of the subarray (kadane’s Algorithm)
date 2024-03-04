@@ -1,0 +1,32 @@
+Current sum					max sum
+First sub array has max sum itself
+
+int a[]= -1    4   -6      8
+	     0     1     2      3
+Subarray                      	sum
+ [-1] 					= -1
+[-1   4]				=3
+[-1  4  -6]			  	= -3
+[-1  4  -6  8]		  	= 5
+[4]				  	=  4
+[4   -6]			  	= -2
+[4  -6   8]			  	= -2
+[-6]				  	= -6
+[-6  8]			  	= 2
+[8]				  	= 8
+				
+Public class Main{
+	Public static void main(String[] args){
+		Int current sum=a[0];
+		Int maxsum=a[0];
+			for(int i=1;i<a.length;i++){
+				if(a[i]>currentsum+a[i]){
+					currentsum=a[i];
+			}else{
+				Currentsum=currentsum+a[i];
+		}
+		if(currentsum>maxsum){
+			Maxsum=currentsum;
+		}
+	}
+}
