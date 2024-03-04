@@ -1,0 +1,14 @@
+# witout using Hash map or Hash set
+public class Main {
+    public static void main(String[] args) {
+        int[] a = {1, 2, 1, 4, 2};
+
+        int result = 0;
+        for (int index = 0; index < a.length; index++) {
+            result = result ^ a[index];
+        }
+
+        System.out.println(result);
+    }
+}
+output:-4
