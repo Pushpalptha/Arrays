@@ -1,0 +1,19 @@
+#Monotonic: - An Array is said to be monotonic if the elements in the array are strictly arranged either in ascending or descending order.
+#1,2,2,3 monotonic arrays
+#6,5,4,4 monotonic arrays
+#1,3,2,4 not monotonic arrays
+Public class Main{
+	Public static void main(String[] args){
+		for(int=0;i<a.length;i++){
+			if(a[i]<a[i+1]){
+				descending=false;
+				}
+				Else if (a[i]>a[i+1]){
+					increasing order=false;
+			}
+		}
+		Return increasing || descending order;
+	}
+}
+input:-  1  2  2  3
+ouput:-  True
