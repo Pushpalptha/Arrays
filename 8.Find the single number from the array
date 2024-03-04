@@ -1,4 +1,5 @@
 # witout using Hash map or Hash set
+# we are going to use X-OR  
 public class Main {
     public static void main(String[] args) {
         int[] a = {1, 2, 1, 4, 2};
@@ -11,4 +12,5 @@ public class Main {
         System.out.println(result);
     }
 }
+
 output:-4
