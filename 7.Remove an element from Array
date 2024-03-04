@@ -1,0 +1,38 @@
+public class Main {
+    public static void main(String[] args) {
+        int[] input = {1, 2, 3, 4, 5};
+        int key = 3;
+
+        int indexToRemove = -1;
+        for (int i = 0; i < input.length; i++) {
+            if (input[i] == key) {
+                indexToRemove = i;
+                break;
+            }
+        }
+
+        if (indexToRemove != -1) {
+            int[] newArr = new int[input.length - 1];
+            int dst = 0;
+
+            for (int src = 0; src < input.length; src++) {
+                if (src != indexToRemove) {
+                    newArr[dst] = input[src];
+                    dst++;
+                }
+            }
+
+            // Update the original array with the new array
+            input = newArr;
+
+            // Print the updated array
+            System.out.print("Updated Array: ");
+            for (int i = 0; i < input.length; i++) {
+                System.out.print(input[i] + " ");
+            }
+        } else {
+            System.out.println("Element not found in the array.");
+        }
+    }
+}
+output:-1 2 4 5
