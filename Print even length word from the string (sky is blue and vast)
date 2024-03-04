@@ -1,0 +1,17 @@
+public class Main {
+    public static void main(String[] args) {
+        String inputText = "sky is blue and vast";
+        String[] wordArray = inputText.split(" ");
+
+        for (int i = 0; i < wordArray.length; i++) {
+            String currentWord = wordArray[i];
+            if (currentWord.length() % 2 == 0) {
+                System.out.println(currentWord);
+            }
+        }
+    }
+}
+output:-is
+        blue
+        vast
+        
